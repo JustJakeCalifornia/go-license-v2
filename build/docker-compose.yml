@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  keygen-service:
+    build:
+      context: ./../keygen-service
+      dockerfile: ./../keygen-service/keygen-service.dockerfile
+    restart: always
+    ports:
+      - "8080:8080"
+    deploy:
+      mode: replicated
+      replicas: 1
