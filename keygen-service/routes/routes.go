@@ -3,7 +3,7 @@ package routes
 import (
 	"net/http"
 
-	"github.com/trite8q1/go-keygen-service/internal/keygen/rest"
+	"github.com/trite8q1/go-license-v2/keygen-service/routes/rest"
 )
 
 type Route struct {

@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/trite8q1/go-keygen-service/internal/routes"
+	"github.com/trite8q1/go-license-v2/keygen-service/routes"
 )
 
 type Config struct {
