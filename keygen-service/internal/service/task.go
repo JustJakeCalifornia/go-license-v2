@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/trite8q1/go-license-v2/keygen-service/internal/entities"
-	"github.com/trite8q1/go-license-v2/keygen-service/utils"
+	"github.com/trite8q1/go-license-v2/keygen-service/pkg/utils"
 )
 
 // TODO: bad practise to have this variables in global scope -> maybe struct?

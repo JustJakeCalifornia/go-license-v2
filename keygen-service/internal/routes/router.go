@@ -6,7 +6,7 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/trite8q1/go-license-v2/keygen-service/internal/middleware"
-	"github.com/trite8q1/go-license-v2/keygen-service/utils"
+	"github.com/trite8q1/go-license-v2/keygen-service/pkg/utils"
 )
 
 // NewRouter
