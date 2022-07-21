@@ -1,7 +1,6 @@
 package routes
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
@@ -31,7 +30,6 @@ func getRoutes(router *chi.Mux) []Route {
 		handler = utils.Logger(handler, route.Name)
 
 		router.Method(route.Method, route.APIVersion+route.Pattern, handler)
-		fmt.Println("hier drinnen")
 	}
 	return routes
 }

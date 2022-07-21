@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY ./cmd ./cmd
 COPY ./internal ./internal
-COPY ./utils ./utils
+COPY ./pkg ./pkg
 
 RUN go build -o ./binary/keygen-service ./cmd/api/main.go
 
