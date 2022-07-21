@@ -5,12 +5,16 @@ import (
 	"net/http"
 
 	"github.com/go-chi/chi/v5"
+	"github.com/trite8q1/go-license-v2/keygen-service/internal/middleware"
 	"github.com/trite8q1/go-license-v2/keygen-service/utils"
 )
 
 // NewRouter
 func NewRouter() *chi.Mux {
 	router := chi.NewRouter()
+
+	middleware.InitializeMiddleware(router)
+	middleware.InitializeCors(router)
 
 	router.Route(APIVersionV1, func(r chi.Router) {
 		getRoutes(router)
