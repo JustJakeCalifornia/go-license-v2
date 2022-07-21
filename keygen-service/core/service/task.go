@@ -3,8 +3,8 @@ package service
 import (
 	"time"
 
-	"github.com/trite8q1/go-keygen-service/pkg/entities"
-	"github.com/trite8q1/go-keygen-service/pkg/utils"
+	"github.com/trite8q1/go-license-v2/keygen-service/core/entities"
+	"github.com/trite8q1/go-license-v2/keygen-service/utils"
 )
 
 // TODO: bad practise to have this variables in global scope -> maybe struct?

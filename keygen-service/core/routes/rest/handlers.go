@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/trite8q1/go-license-v2/keygen-service/service"
+	"github.com/trite8q1/go-license-v2/keygen-service/core/service"
 )
 
 //Index route

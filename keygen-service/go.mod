@@ -3,6 +3,7 @@ module github.com/trite8q1/go-license-v2/keygen-service
 go 1.18
 
 require (
-	github.com/gorilla/mux v1.8.0
-	github.com/trite8q1/go-keygen-service v0.0.0-20220716232045-a573e7331066
+	github.com/go-chi/chi v1.5.4 // indirect
+	github.com/go-chi/chi/v5 v5.0.7 // indirect
+	github.com/go-chi/render v1.0.1 // indirect
 )
