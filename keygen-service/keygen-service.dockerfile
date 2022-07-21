@@ -7,9 +7,7 @@ COPY go.sum .
 RUN go mod download
 
 COPY ./cmd ./cmd
-COPY ./entities ./entities
-COPY ./routes ./routes
-COPY ./service ./service
+COPY ./internal ./internal
 COPY ./utils ./utils
 
 RUN go build -o ./binary/keygen-service ./cmd/api/main.go
