@@ -8,8 +8,8 @@ import (
 
 const (
 	APIPrefix    = "/api"
-	APIVersionV1 = "/api/v1"
-	APIVersionV2 = "/api/v2"
+	APIVersionV1 = APIPrefix + "/v1"
+	APIVersionV2 = APIPrefix + "/v2"
 )
 
 type Route struct {
@@ -24,13 +24,6 @@ type Routes []Route
 
 var routes = Routes{
 	Route{
-		"Index",
-		"GET",
-		"/",
-		APIVersionV1,
-		rest.Index,
-	},
-	Route{
 		"Health",
 		"GET",
 		"/health",
@@ -38,10 +31,17 @@ var routes = Routes{
 		rest.Health,
 	},
 	Route{
-		"GenerateLicense",
+		"GenerateLicenseV1",
 		"GET",
 		"/licenses",
 		APIVersionV1,
 		rest.GetLicenses,
+	},
+	Route{
+		"GenerateLicenseV2",
+		"GET",
+		"/licenses",
+		APIVersionV2,
+		rest.GetLicensesV2,
 	},
 }

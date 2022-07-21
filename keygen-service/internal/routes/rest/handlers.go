@@ -52,3 +52,20 @@ func GetLicenses(w http.ResponseWriter, r *http.Request) {
 	}
 	w.Write(bytes)
 }
+
+// exopse licenses to api v2
+func GetLicensesV2(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
+	w.WriteHeader(http.StatusOK)
+
+	for i := 0; i <= 100; i++ {
+		service.GenerateAvailableLicenses()
+	}
+	payload := service.AvailableLicenses
+
+	bytes, err := json.Marshal(payload)
+	if err != nil {
+		panic(err)
+	}
+	w.Write(bytes)
+}
