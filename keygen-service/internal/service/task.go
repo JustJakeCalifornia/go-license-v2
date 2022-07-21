@@ -3,7 +3,7 @@ package service
 import (
 	"time"
 
-	"github.com/trite8q1/go-license-v2/keygen-service/core/entities"
+	"github.com/trite8q1/go-license-v2/keygen-service/internal/entities"
 	"github.com/trite8q1/go-license-v2/keygen-service/utils"
 )
 

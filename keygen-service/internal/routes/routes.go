@@ -3,12 +3,13 @@ package routes
 import (
 	"net/http"
 
-	"github.com/trite8q1/go-license-v2/keygen-service/core/routes/rest"
+	"github.com/trite8q1/go-license-v2/keygen-service/internal/routes/rest"
 )
 
 const (
-	APIVersionV1 = "v1"
-	APIVersionV2 = "v2"
+	APIPrefix    = "/api"
+	APIVersionV1 = "/api/v1"
+	APIVersionV2 = "/api/v2"
 )
 
 type Route struct {
